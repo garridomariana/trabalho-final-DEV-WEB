@@ -222,13 +222,13 @@ figcaption{
     grid-row: 1 / 2;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     flex-wrap: wrap;
 }
 
 .oscar img {
-    width: 50%;
+    width: 60%;
     height: auto;
     border-radius: 5px;
     
@@ -263,41 +263,3 @@ aside ul li a:hover {
     font-size: 1.1rem;   
     transition: font-size 0.3s ease; 
 }
-
-
-/*#imagem2{
-    min-width: 250px;
-    display: flex;
-    justify-content: bottom;
-    align-items: left;
-}
-
-#imagem2 img{
-    width: 23%;
-    height: auto;
-}
-
-#imagem3{
-    min-width: 250px;
-    display: flex;
-    justify-content: bottom;
-    align-items: left;
-}
-
-#imagem3 img{
-    width: 23%;
-    height: auto;
-}
-
-.imagem4{
-    min-width: 250px;
-    display: flex;
-    justify-content: bottom;
-    align-items: left;
-}
-
-.imagem4 img{
-    width: 23%;
-    height: auto;
-}
-*/
