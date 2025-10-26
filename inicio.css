@@ -256,10 +256,10 @@ figcaption{
 
 nav ul li a:hover {
     font-size: 1rem;   
-    transition: font-size 0.3s ease; 
+    transition:  0.3s ease; 
 }
 
 aside ul li a:hover {
     font-size: 1.1rem;   
-    transition: font-size 0.3s ease; 
+    transition: 0.3s ease; 
 }
