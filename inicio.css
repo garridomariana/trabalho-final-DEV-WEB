@@ -41,6 +41,8 @@ nav ul li a{
 
 section{
     margin: 20px;
+    flex: 2;
+    min-width: 300px;
 }
 
 section h2{
@@ -61,12 +63,6 @@ main {
     gap: 20px;
     padding: 0 20px;
     flex: 1;
-}
-
-
-section {
-    flex: 2;
-    min-width: 300px;
 }
 
 aside{

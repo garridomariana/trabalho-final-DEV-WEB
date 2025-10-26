@@ -44,12 +44,6 @@ nav ul li a:hover {
     transition: 0.3s ease; 
 }
 
-section img{
-    margin-top: 100px;
-    width: 100%;
-    height: auto;
-}
-
 .texto1{
     color:#870A28;
     text-align: left;
