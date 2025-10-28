@@ -156,8 +156,7 @@ figcaption{
     }
 
     .oscar img {
-        width: 100%;             
-        max-width: 350px;        
+        width: 100%;                   
     }
 
     .escudos {
@@ -224,9 +223,10 @@ figcaption{
 }
 
 .oscar img {
-    width: 60%;
+    width: 63%;
     height: auto;
     border-radius: 5px;
+    min-width: 350px;
     
 }
 
