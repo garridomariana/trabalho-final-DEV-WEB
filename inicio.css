@@ -1,26 +1,32 @@
-body{
+html, body {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1;
-    margin: 0%;
-    padding: 0%;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
 }
 
-header{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
     color: #870A28;
     text-align: center;
 }
 
-header h2{
-    color:#00613C;
+header h2 {
+    color: #00613C;
 }
 
-nav ul{
+nav ul {
     list-style: none;
-    padding:0%;
+    padding: 0%;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -28,30 +34,30 @@ nav ul{
     gap: 15px;
 }
 
-nav ul li{
-    display:inline;
+nav ul li {
+    display: inline;
 }
 
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color:#870A28;
+    color: #870A28;
     border: none;
     background: none;
 }
 
-section{
+section {
     margin: 20px;
     flex: 2;
     min-width: 300px;
 }
 
-section h2{
-    color:#870A28;
+section h2 {
+    color: #870A28;
     text-align: left;
     padding: 1%;
 }
 
-article{
+article {
     margin-bottom: 20px;
     text-align: justify;
 }
@@ -65,7 +71,7 @@ main {
     flex: 1;
 }
 
-aside{
+aside {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     color: #870A28;
@@ -74,18 +80,17 @@ aside{
     justify-items: center;
 }
 
-aside ul{
-    list-style:none ;
+aside ul {
+    list-style: none;
     margin: 10px 0;
-    padding:0;
+    padding: 0;
 }
 
-
-aside ul li{
+aside ul li {
     margin-bottom: 10px;
 }
 
-aside ul li a{
+aside ul li a {
     color: #00613C;
     text-decoration: none;
 }
@@ -98,30 +103,193 @@ aside ul li a{
     gap: 10px;
 }
 
-footer p{
-    background-color:#00613C;
+footer p {
+    background-color: #00613C;
     color: #FFFFFF;
-    padding:16px;
+    padding: 16px;
     text-align: center;
     margin-bottom: 0;
-
 }
 
-figure{
+figure {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-figcaption{
-    display:block;
+figcaption {
+    display: block;
     visibility: visible;
     position: relative;
     margin-top: 8px;
     font-size: 14px;
     text-align: center;
-    color:#00613C;
+    color: #00613C;
 }
+
+.conteudo {
+    display: contents;
+}
+
+.texto {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.oscar {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.oscar figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.oscar img {
+    width: 63%;
+    height: auto;
+    border-radius: 5px;
+    min-width: 350px;
+}
+
+.escudos {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.escudo {
+    width: 220px;
+    height: 240px;
+}
+
+nav ul li a:hover {
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+aside ul li a:hover {
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+
+
+
+.oscar img {
+    width: 72%;
+    max-width: 520px;
+    min-width: 260px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.escudos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    box-sizing: border-box;
+}
+
+.escudo {
+    width: 220px;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+aside {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+aside ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 950px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .oscar img {
+        width: 88%;
+        min-width: unset;
+    }
+
+    .escudos {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .escudo {
+        width: 45%;
+        max-width: 180px;
+    }
+
+    aside ul {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.oscar figure, .oscar { width: auto !important; }
+.escudos img, .escudo img { max-height: none; }
+
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+aside ul li {
+    margin-bottom: 6px;
+}
+
+.oscar img {
+    width: clamp(58%, 70%, 600px) !important;
+    min-width: 340px !important;
+    height: auto !important;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
 
 
 @media (max-width: 768px) {
@@ -150,28 +318,26 @@ figcaption{
         margin: 5px 10px;
     }
 
-    .oscar{
-        flex-direction: column;  
+    .oscar {
+        flex-direction: column;
         align-items: center;
     }
 
     .oscar img {
-        width: 100%;                   
+        width: 100%;
     }
 
     .escudos {
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
         gap: 15px;
     }
 
     .escudo {
-        width: 45%;              
+        width: 45%;
         max-width: 180px;
         height: auto;
     }
-
 }
-
 
 @media (min-width: 480px) {
     header h1 {
@@ -197,65 +363,4 @@ figcaption{
     footer p {
         font-size: 0.85rem;
     }
-}
-
-.conteudo{
-    display: contents;
-}
-
-.texto {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 10px;
-}
-
-.oscar {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.oscar img {
-    width: 63%;
-    height: auto;
-    border-radius: 5px;
-    min-width: 350px;
-    
-}
-
-.oscar figure{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    width: 50%;
-}
-
-.escudos{
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: center;
-    gap:10px;
-}
-
-.escudo{
-    width: 220px;
-    height: 240px;
-}
-
-nav ul li a:hover {
-    font-size: 1rem;   
-    transition:  0.3s ease; 
-}
-
-aside ul li a:hover {
-    font-size: 1.1rem;   
-    transition: 0.3s ease; 
 }
